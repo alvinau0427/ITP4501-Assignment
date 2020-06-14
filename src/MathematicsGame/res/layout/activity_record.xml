@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/rootLayout" >
+	
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/record"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="@string/note" />
+    
+    <Button
+	    android:id="@+id/btnBack"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="10dp"
+	    android:background="@drawable/button_main"
+	    android:text="@string/back" />
+    
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+    
+	<TextView
+	    android:id="@+id/tvCorrect"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignBaseline="@+id/tvShowCorrect"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:text="@string/correct" />
+
+	<TextView
+	    android:id="@+id/tvShowCorrect"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@+id/tvCorrect"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textColor="#43C222"
+	    android:gravity="center"
+	    android:text="0" />
+	
+	<TextView
+	    android:id="@+id/tvWrong"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignBaseline="@+id/tvShowWrong"
+	    android:layout_below="@+id/tvCorrect"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:text="@string/wrong" />
+	
+	<TextView
+	    android:id="@+id/tvShowWrong"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@+id/tvCorrect"
+	    android:layout_below="@+id/tvShowCorrect"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textColor="#C22243"
+	    android:gravity="center"
+	    android:text="0" />
+	
+	<TextView
+	    android:id="@+id/tvTime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignBaseline="@+id/tvShowTime"
+	    android:layout_below="@+id/tvWrong"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:text="@string/time" />
+	
+	<TextView
+	    android:id="@+id/tvShowTime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/tvShowWrong"
+	    android:layout_margin="5dp"
+	    android:layout_toRightOf="@+id/tvCorrect"
+	    android:textStyle="bold"
+	    android:textColor="#2243C2"
+	    android:gravity="center"
+	    android:text="00:00:00" />
+	
+	<ImageView
+	    android:id="@+id/ivBanner"
+	    android:layout_below="@+id/tvTime"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:contentDescription="@string/description"
+	    android:src="@drawable/banner2" />
+	
+	<TextView
+	    android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBanner"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/question" />
+	
+	<TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+	
+	<Button
+	    android:id="@+id/btnBegin"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btnSelection1"
+	    android:layout_below="@+id/tvResult"
+	    android:layout_marginTop="@dimen/button_margin"
+	    android:layout_gravity="center"
+	    android:background="@drawable/button_main"
+	    android:text="@string/begin" />
+	
+    <Button
+        android:id="@+id/btnSelection1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/view1"
+        android:layout_above="@+id/btnSelection3"
+        android:layout_marginTop="@dimen/button_margin"
+        android:background="@drawable/button_main"
+        android:text="A" />
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_above="@+id/view2"
+        android:layout_centerHorizontal="true" />
+    
+    <Button
+        android:id="@+id/btnSelection2"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@+id/view1"
+		android:layout_above="@+id/btnSelection4"
+		android:layout_marginTop="@dimen/button_margin"
+		android:background="@drawable/button_main"
+		android:text="B" />
+    
+    <Button
+        android:id="@+id/btnSelection3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/view2"
+        android:layout_above="@+id/btnFinish"
+        android:layout_marginTop="@dimen/button_margin"
+        android:background="@drawable/button_main"
+        android:text="C" />
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_above="@+id/btnFinish"
+        android:layout_centerHorizontal="true" />
+    
+    <Button
+        android:id="@+id/btnSelection4"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@+id/view2"
+		android:layout_above="@+id/btnFinish"
+		android:layout_marginTop="@dimen/button_margin"
+		android:background="@drawable/button_main"
+		android:text="D" />
+
+	<Button
+	    android:id="@+id/btnFinish"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginTop="@dimen/button_margin"
+	    android:layout_gravity="center"
+	    android:background="@drawable/button_main"
+	    android:text="@string/next_question" />
+
+</RelativeLayout>

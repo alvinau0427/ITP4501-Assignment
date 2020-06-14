@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:layout_below="@+id/tvScore"
+        android:typeface="monospace" />
+    
+    <TextView
+	    android:id="@+id/tvNo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/tvDate"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignBaseline="@+id/tvShowNo"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:text="@string/gameNo" />
+    
+    <TextView
+        android:id="@+id/tvShowNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvShowDate"
+        android:layout_alignRight="@+id/btnBack"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/tvNo"
+        android:gravity="center"
+        android:textStyle="bold" />
+    
+    <TextView
+	    android:id="@+id/tvDate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btnBack"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignBaseline="@+id/tvShowDate"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:text="@string/date" />
+    
+    <TextView
+        android:id="@+id/tvShowDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_alignLeft="@+id/tvShowNo"
+        android:layout_alignRight="@+id/tvShowNo"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    
+    <Button
+	    android:id="@+id/btnBack"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="10dp"
+	    android:background="@drawable/button_main"
+	    android:text="@string/back" />
+    
+</RelativeLayout>

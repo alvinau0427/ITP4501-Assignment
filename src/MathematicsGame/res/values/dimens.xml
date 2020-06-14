@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+	<!-- Custom  margins -->
+	<dimen name="button_margin">10dp</dimen>
+    <dimen name="button_radius">10dp</dimen>
+    <dimen name="score_font_size">34sp</dimen>
+	
+	<item name="exercise_question_image_scale_factor" format="float" type="dimen">0.0000017</item>
+    <item name="exercise_answer_image_scale_factor" format="float" type="dimen">0.0000017</item>
+	
+</resources>
