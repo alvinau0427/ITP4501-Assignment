@@ -23,7 +23,7 @@
 ### Run the program
 - select the run 'app' button (Shift + F10)
 
-## Demonstration
+## Screenshots
 ![image](https://github.com/alvinau0427/ITP4501-Assignment/blob/master/doc/demo.gif)
 
 ## License
