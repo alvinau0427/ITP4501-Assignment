@@ -3,9 +3,8 @@
 
 > Android Program (Eclipse ADT): Mathematic Game
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
-[![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Build Status](https://travis-ci.com/alvinau0427/ITP4501-Assignment.svg?branch=master)](https://travis-ci.org/alvinau0427/ITP4501-Assignment)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Getting Started
 - Android Application to play a Mathematic Game by downloading the questions from a server and then request player to solve them. This application will also record the result and corresponding time required to complete a game and use charts to show the history records.
@@ -27,7 +26,7 @@
 ![image](https://github.com/alvinau0427/ITP4501-Assignment/blob/master/doc/demo.gif)
 
 ## License
-- ITP4501-Assignment is released under the [MIT license](https://opensource.org/licenses/MIT).
+- ITP4501-Assignment is released under the [MIT License](https://opensource.org/licenses/MIT).
 ```
 Copyright (c) 2020 alvinau0427
 
